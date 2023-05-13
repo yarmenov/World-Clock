@@ -1,1 +1,43 @@
+function showTime() {
+  let londonDateElement = document.querySelector("#london .date");
+  londonDateElement.innerHTML = moment()
+    .tz("Europe/London")
+    .format("MMMM Do YYYY");
 
+  let londonTimeElement = document.querySelector("#london .time");
+  londonTimeElement.innerHTML = moment()
+    .tz("Europe/London")
+    .format("HH:mm:ss[<small>] A [</small]");
+
+  let sofiaDateElement = document.querySelector("#sofia .date");
+  sofiaDateElement.innerHTML = moment()
+    .tz("Europe/Sofia")
+    .format("MMMM Do YYYY");
+
+  let sofiaTimeElement = document.querySelector("#sofia .time");
+  sofiaTimeElement.innerHTML = moment()
+    .tz("Europe/Sofia")
+    .format("HH:mm:ss[<small>] A [</small]");
+
+  let galapagosDateElement = document.querySelector("#galapagos .date");
+  galapagosDateElement.innerHTML = moment()
+    .tz("Pacific/Galapagos")
+    .format("MMMM Do YYYY");
+
+  let galapagosTimeElement = document.querySelector("#galapagos .time");
+  galapagosTimeElement.innerHTML = moment()
+    .tz("Pacific/Galapagos")
+    .format("HH:mm:ss[<small>] A [</small]");
+
+  let losangelesDateElement = document.querySelector("#los-angeles .date");
+  losangelesDateElement.innerHTML = moment()
+    .tz("America/Los_Angeles")
+    .format("MMMM Do YYYY");
+
+  let losangelesTimeElement = document.querySelector("#los-angeles .time");
+  losangelesTimeElement.innerHTML = moment()
+    .tz("America/Los_Angeles")
+    .format("HH:mm:ss[<small>] A [</small]");
+}
+showTime();
+setInterval(showTime, 1000);
