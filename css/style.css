@@ -63,6 +63,11 @@ select {
   vertical-align: middle;
   line-height: 48px;
 }
+
+.home {
+  color: white;
+  font-size: 18px;
+}
 footer {
   text-align: center;
   font-size: 18px;

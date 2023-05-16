@@ -51,7 +51,10 @@ function updateCity(event) {
     "A"
   )}</small></div>
   </div>
+  <br/>
+   <a  class="home" href="/">Back to Homepage</a>
   `;
 }
+
 let citiesContent = document.querySelector("#city");
 citiesContent.addEventListener("change", updateCity);
